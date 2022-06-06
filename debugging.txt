@@ -1,0 +1,1 @@
+Debugging jsme provadeli v Qt Creatoru pomoci metody QDebug

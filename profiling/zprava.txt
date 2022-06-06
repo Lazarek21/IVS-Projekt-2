@@ -1,0 +1,11 @@
+The program for calculating Standard Deviation was profiled using gprof with 10, 100 and 1000 input values. 
+All results can be seen in gprof-result10.txt (10 inputs), gprof-result100.txt (100 inputs) and gprof-result1000.txt(1000 inputs).
+
+Results show that gprof was unable to catch any heavier processing time on any of used mathematical functions needed for calculating 
+the standard deviation, as each sample counts as 0.01sec.(meaning function runtime < 0.01sec)
+The calculation was implemented using std::vector, many called functions in result belong to this sequence container and can be ignored.
+Therefore it is safe to say there is no need for PGO, taking sampling count speed in mind - the functions are implemented well enough.
+
+If needed, a larger scale profiling with 10k inputs stacked 500times can be generated using command <make profile>, 
+results can be seen in generated file gprof-results-huge.txt located in same directory.
+The consensus on the larger scale profiling would be the same as this one.

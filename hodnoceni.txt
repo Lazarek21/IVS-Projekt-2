@@ -1,0 +1,4 @@
+xdolez0c 100 (GUI, plan)	
+xvecer30 100 (Testy, mockup,  instalator)
+xpolia05 100 (Profiling, uzivatelska prirucka, Navrh GUI)
+xloren16 100 (Makefile, matematicka knihovna, programova dokumentace)
